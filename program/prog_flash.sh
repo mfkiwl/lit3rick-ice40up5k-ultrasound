@@ -1,4 +1,4 @@
-lit3prog -f < lit3_v2.0.bin
+./lit3prog -f < lit3_v2.0.bin
 
 gpio mode 10 IN
 gpio mode 11 IN

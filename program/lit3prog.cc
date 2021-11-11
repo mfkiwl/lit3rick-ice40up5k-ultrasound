@@ -54,7 +54,6 @@ int RPI_ICE_CDONE = 4 ; // gp23 -- (RPI GPIO.4)
 int RPI_ICE_MOSI = 12; // GP10 -- (RPI MISO)
 int RPI_ICE_MISO =  13; // GP09 -- (RPI MOSI) 
 int RPI_ICE_CS = 11; // GP07 -- (RPI CE1)
-int RPI_EXTRA = 10;
 int RPI_ICE_CRESET  = 6; // GP25 -- (RPI GPIO.6)
 
 #  define LOAD_FROM_FLASH 25 // IGNORE -- PIN 33, GPIO.23
@@ -1055,9 +1054,8 @@ void reset_inout()
 		pinMode(RPI_ICE_MISO,    4);
 		pinMode(LOAD_FROM_FLASH, INPUT);
 		pinMode(RPI_ICE_CRESET,  INPUT);
-		pinMode(RPI_ICE_CS,      INPUT);
-		pinMode(RPI_ICE_SELECT,  INPUT);
-                pinMode(RPI_EXTRA,       INPUT);
+		pinMode(RPI_ICE_CS,      OUTPUT);
+		pinMode(RPI_ICE_SELECT,  OUTPUT);
 	}
 
 	if (enable_data_port)

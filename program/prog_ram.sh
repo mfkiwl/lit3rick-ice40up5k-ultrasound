@@ -1,4 +1,4 @@
-lit3prog -p < lit3_v2.0.bin
+./lit3prog -p < jn.bin
 
 gpio mode 10  OUT 
 gpio mode 11 OUT 
